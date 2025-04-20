@@ -23,7 +23,8 @@ body {
 }
 
 .logo img {
-  height: 40px;
+  height: 70px;
+  width: auto;
 }
 
 .nav-spacer {
