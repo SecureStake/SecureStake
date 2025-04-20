@@ -1,111 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const authBtn = document.getElementById('authBtn');
+  let isSignedIn = false;
 
-body {
-  background-color: #0e0e10;
-  color: #ffffff;
-  padding: 0 20px;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  padding: 0 10px;
-  border-bottom: 1px solid #222;
-  background-color: #1a1a1d;
-}
-
-.logo img {
-  height: 40px;
-}
-
-.nav-spacer {
-  flex-grow: 1;
-}
-
-.nav-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.icon-btn:hover {
-  transform: scale(1.2);
-}
-
-/* Stake Card Layout */
-.stake-cards {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.stake-card {
-  background-color: #1e1e22;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.stake-card:hover {
-  transform: translateY(-2px);
-}
-
-.coin-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.coin-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.coin-details h3 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.apy {
-  margin-top: 5px;
-  font-size: 16px;
-  color: #00ffcc;
-}
-
-.stake-btn {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background-color: #00ffcc;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.stake-btn:hover {
-  background-color: #00e6b8;
+  authBtn.addEventListener('click', () => {
+    if (!isSignedIn) {
+      // Simulate Sign Up
+      isSignedIn = true;
+      authBtn.textContent = '🧑‍💼'; // Profile icon
+      authBtn.title = 'My Profile';
+    } else {
+      // Simulate sign out (optional)
+      isSignedIn = false;
+      authBtn.textContent = '👤';
+      authBtn.title = 'Sign Up';
     }
+  });
+});
