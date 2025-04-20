@@ -2,43 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SimpStake</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">SimpStake</div>
-    <div class="nav-right">
-      <button class="icon-btn">⚙️</button>
-      <button class="wallet-btn">Connect Wallet</button>
-      <button class="login-btn">Login / Sign Up</button>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bitcoin.svg/32px-Bitcoin.svg.png" alt="Logo" />
+    </div>
+    <div class="nav-spacer"></div>
+    <div class="nav-icons">
+      <button class="icon-btn" title="Connect Wallet">🔗</button>
+      <button class="icon-btn" id="authBtn" title="Sign Up">👤</button>
     </div>
   </header>
 
+  <!-- Main Stake Section -->
   <main>
-    <section class="coin-table">
-      <div class="coin-row">
-        <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT" class="coin-icon">
-        <span>USDT</span>
-        <span class="apy">APY: 12%</span>
-        <button class="stake-btn">Stake Now</button>
+    <section class="stake-cards">
+
+      <!-- Example Coin -->
+      <div class="stake-card">
+        <div class="coin-info">
+          <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT" class="coin-img" />
+          <div class="coin-details">
+            <h3>USDT</h3>
+            <p class="apy">APY: 12%</p>
+          </div>
+        </div>
+        <button class="stake-btn">Stake</button>
       </div>
-      <div class="coin-row">
-        <img src="https://cryptologos.cc/logos/polygon-matic-logo.png" alt="MATIC" class="coin-icon">
-        <span>MATIC</span>
-        <span class="apy">APY: 10%</span>
-        <button class="stake-btn">Stake Now</button>
+
+      <div class="stake-card">
+        <div class="coin-info">
+          <img src="https://cryptologos.cc/logos/polygon-matic-logo.png" alt="MATIC" class="coin-img" />
+          <div class="coin-details">
+            <h3>MATIC</h3>
+            <p class="apy">APY: 10%</p>
+          </div>
+        </div>
+        <button class="stake-btn">Stake</button>
       </div>
-      <div class="coin-row">
-        <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="BNB" class="coin-icon">
-        <span>BNB</span>
-        <span class="apy">APY: 14%</span>
-        <button class="stake-btn">Stake Now</button>
+
+      <div class="stake-card">
+        <div class="coin-info">
+          <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="BNB" class="coin-img" />
+          <div class="coin-details">
+            <h3>BNB</h3>
+            <p class="apy">APY: 14%</p>
+          </div>
+        </div>
+        <button class="stake-btn">Stake</button>
       </div>
+
     </section>
   </main>
 </body>
-</html>
+  </html>
