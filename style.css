@@ -6,79 +6,106 @@
 }
 
 body {
-  background-color: #0e0e1a;
-  color: #fff;
+  background-color: #0e0e10;
+  color: #ffffff;
+  padding: 0 20px;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #1c1c2b;
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 10px;
+  border-bottom: 1px solid #222;
+  background-color: #1a1a1d;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #00ffc8;
+.logo img {
+  height: 40px;
 }
 
-.nav-right button {
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  background: #232333;
+.nav-spacer {
+  flex-grow: 1;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-btn {
+  background: none;
   border: none;
-  border-radius: 8px;
   color: #fff;
+  font-size: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.2s ease;
 }
 
-.nav-right button:hover {
-  background-color: #2e2e4a;
+.icon-btn:hover {
+  transform: scale(1.2);
 }
 
-.coin-table {
-  margin: 2rem auto;
-  max-width: 600px;
+/* Stake Card Layout */
+.stake-cards {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-.coin-row {
-  background-color: #1c1c2b;
-  padding: 1rem;
+.stake-card {
+  background-color: #1e1e22;
   border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.stake-card:hover {
+  transform: translateY(-2px);
+}
+
+.coin-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
 }
 
-.coin-icon {
-  width: 32px;
-  margin-right: 0.5rem;
+.coin-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
-.apy {
-  color: #00ffc8;
+.coin-details h3 {
+  font-size: 22px;
   font-weight: 600;
 }
 
+.apy {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #00ffcc;
+}
+
 .stake-btn {
-  background-color: #00ffc8;
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00ffcc;
   border: none;
-  padding: 0.5rem 1rem;
-  color: #000;
-  font-weight: bold;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .stake-btn:hover {
-  background-color: #00e6b2;
+  background-color: #00e6b8;
 }
