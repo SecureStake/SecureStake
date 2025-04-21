@@ -45,7 +45,7 @@
             <p class="apy">APY: 10%</p>
           </div>
         </div>
-        <button class="stake-btn">Stake</button>
+        <button class="stake-btn" onclick="handleStake()">Stake</button>
       </div>
 
       <div class="stake-card">
@@ -56,10 +56,20 @@
             <p class="apy">APY: 14%</p>
           </div>
         </div>
-        <button class="stake-btn">Stake</button>
+       <button class="stake-btn" onclick="handleStake()">Stake</button>
       </div>
 
     </section>
   </main>
+  <script>
+  function handleStake() {
+    const isLoggedIn = localStorage.getItem("loggedIn");
+    if (isLoggedIn === "true") {
+      window.location.href = "plans.html"; // Redirect to staking plans
+    } else {
+      window.location.href = "login.html"; // Redirect to login page
+    }
+  }
+  </script>
 </body>
   </html>
