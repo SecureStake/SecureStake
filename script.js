@@ -16,3 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+<script>
+  function isUserSignedIn() {
+    // Simulate check - replace with real login check later
+    return localStorage.getItem("signedIn") === "true";
+  }
+
+  function handleStakeClick() {
+    if (isUserSignedIn()) {
+      window.location.href = "plans.html"; // Redirect to staking plans
+    } else {
+      window.location.href = "login.html"; // Redirect to login
+    }
+  }
+</script>
