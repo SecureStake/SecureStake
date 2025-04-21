@@ -1,0 +1,10 @@
+<!-- login.html -->
+<h2>Login to SimpStake</h2>
+<button onclick="login()">Sign In</button>
+
+<script>
+  function login() {
+    localStorage.setItem("signedIn", "true");
+    window.location.href = "plans.html";
+  }
+</script>
