@@ -110,3 +110,62 @@ body {
 .stake-btn:hover {
   background-color: #00e6b8;
 }
+.signup-body {
+  background-color: #0f051d;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #1e1535;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.form-header .logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #7933ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a277ff;
+}
+
+.redirect-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.redirect-text a {
+  color: #a277ff;
+  text-decoration: none;
+}
