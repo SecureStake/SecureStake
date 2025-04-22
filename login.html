@@ -102,6 +102,22 @@
       }
     }
   </script>
+<script>
+  document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
 
+    const email = e.target[0].value.trim();
+    const password = e.target[1].value.trim();
+    const user = JSON.parse(localStorage.getItem("simpstakeUser"));
+
+    if (!user || user.email !== email || user.password !== password) {
+      alert("Invalid credentials. Try again or sign up first.");
+      return;
+    }
+
+    localStorage.setItem("loggedInUser", user.name); // To identify logged-in user
+    window.location.href = "dashboard.html"; // Your staking or dashboard page
+  });
+                                                         </script>
 </body>
 </html>
